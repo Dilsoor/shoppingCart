@@ -35,10 +35,10 @@ const AppProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    dispatch({ type: "TOGGLE_AMOUNT" });
+    dispatch({ type: "AMOUNT" });
   }, state.cart);
   useEffect(() => {
-    dispatch({ type: "TOGGLE_TOTAL" });
+    dispatch({ type: "TOTAL" });
   }, state.cart);
   return (
     <AppContext.Provider

@@ -34,7 +34,7 @@ const reducer = (state, action) => {
       .filter((el) => el.amount !== 0);
     return { ...state, cart: tempCart };
   }
-  if (action.type === "TOGGLE_AMOUNT") {
+  if (action.type === "AMOUNT") {
     return {
       ...state,
       amount: state.cart.reduce((acc, el) => {
@@ -42,7 +42,7 @@ const reducer = (state, action) => {
       }, 0),
     };
   }
-  if (action.type === "TOGGLE_TOTAL") {
+  if (action.type === "TOTAL") {
     return {
       ...state,
       total: state.cart.reduce((acc, el) => {

@@ -1,0 +1,23 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #39556B;
+    padding: 15px;
+    color: aliceblue;
+    .uil{
+        font-size: 20px;
+    }
+    sup{
+        border: 1px solid white;
+        width: 15px;
+        height: 15px;
+        text-align: center;
+        border-radius: 50%;
+        display: inline-block;
+        margin-bottom: 3px;
+        background-color: #fff;
+        color: #39556B;
+        font-weight: 600;
+    }
+}
